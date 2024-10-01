@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Fighting Game</title>
+    <title>Basketball Shooting Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="game-container">
-        <div class="character" id="player1">Player 1</div>
-        <div class="character" id="player2">Player 2</div>
+        <h1>Basketball Shooting Game</h1>
+        <div class="court">
+            <div class="hoop" id="hoop">🏀</div>
+        </div>
+        <div id="score">Score: 0</div>
+        <button id="shootButton" onclick="shoot()">Shoot!</button>
+        <button id="restart" onclick="restartGame()">Restart Game</button>
     </div>
-    <div class="controls">
-        <button onclick="punch('player1')">Player 1 Punch</button>
-        <button onclick="punch('player2')">Player 2 Punch</button>
-    </div>
-    <div id="result"></div>
     <script src="script.js"></script>
 </body>
 </html>
+
